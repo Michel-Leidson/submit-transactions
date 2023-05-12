@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Submit Transactions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body id="html-body">
+    <div class="loading-message hidden">
+        <div class="loading-animation"></div>
+        Loading..
+    </div>
+    <form class="form-container" id='submit-transaction-form' method="POST">
+        <img src="assets/images/celestia.svg" alt="Celestia Logo">
+        <h1>Celestia Blockspacerace-0</h1>
+
+        <div class="input-container">
+            <input type="text" name="namespace_id" id="namespace_id" class="input" placeholder="Namespace ID"/>
+            <label for="namespace_id" class="input-label">Namespace Id</label>
+        </div>
+        <div class="input-container">
+            <input type="text" name="data" id="data" class="input" placeholder="Datahex"/>
+            <label for="data" class="input-label">Data Hex-encoded Bytes</label>
+        </div>
+        <div class="resp">
+            
+        </div>
+        <input class="submit-button" id="submit-button" value="Submit Transaction" type="submit"/>
+    </form>
+
+    <div class="toast-container">
+        
+        
+    </div>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
